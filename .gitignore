@@ -1,0 +1,55 @@
+# ============================================================
+# libswipetype — .gitignore
+# ============================================================
+
+# ---- Build outputs ----
+build/
+.build/
+out/
+cmake-build-*/
+
+# ---- CMake ----
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# ---- Android / Gradle ----
+.gradle/
+local.properties
+*.iml
+.idea/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# ---- NDK / JNI ----
+*.so
+*.o
+*.a
+*.d
+.cxx/
+.externalNativeBuild/
+
+# ---- IDE ----
+.vscode/
+*.swp
+*.swo
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Test artifacts ----
+*.gcov
+*.gcda
+*.gcno
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo

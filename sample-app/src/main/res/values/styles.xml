@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App theme for the main activity (dark background, light text) -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">#1E1E2E</item>
+        <item name="colorPrimaryDark">#15152A</item>
+        <item name="colorAccent">#4A90D9</item>
+        <item name="android:windowBackground">#1E1E2E</item>
+    </style>
+
+    <!--
+      Theme applied to the IME service window.
+      Forces a dark, translucent surround so the keyboard looks consistent
+      regardless of whether the system is running a light or dark theme.
+    -->
+    <style name="SwipeTypeImeTheme" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackground">#2D2D4E</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+</resources>

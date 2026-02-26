@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Input method metadata for SampleInputMethodService.
+    See: https://developer.android.com/reference/android/inputmethodservice/InputMethodService
+-->
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="dev.dettmer.swipetype.sample.MainActivity">
+
+    <subtype
+        android:label="English (US)"
+        android:imeSubtypeLocale="en_US"
+        android:imeSubtypeMode="keyboard" />
+
+</input-method>

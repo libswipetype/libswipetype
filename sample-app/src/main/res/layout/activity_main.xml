@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E2E"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="SwipeType Demo"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle / description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="This app demonstrates the libswipetype gesture-typing library.\nFollow the steps below to try it."
+            android:textColor="#CCCCCC"
+            android:textSize="14sp" />
+
+        <!-- ── Step 1 ── -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Step 1: Enable the keyboard"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Open Android Settings and enable &quot;SwipeType Sample IME&quot; as a virtual keyboard."
+            android:textColor="#CCCCCC"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_enable_ime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Open IME Settings" />
+
+        <!-- ── Step 2 ── -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Step 2: Switch to SwipeType"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Tap the field below, then tap the keyboard-picker button (globe icon) and select SwipeType."
+            android:textColor="#CCCCCC"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_pick_ime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Show Keyboard Picker" />
+
+        <!-- Status indicator -->
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="#2D2D4E"
+            android:textColor="#AADDAA"
+            android:text="Checking IME status…"
+            android:textSize="13sp" />
+
+        <!-- ── Step 3: text field ── -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Step 3: Type here with gesture"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Swipe across the keys in one fluid motion to enter a word. Tapping a single key inserts that character."
+            android:textColor="#CCCCCC"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edit_text_demo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Swipe to type here…"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:gravity="top"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>

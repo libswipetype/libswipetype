@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- READ_EXTERNAL_STORAGE only needed if loading dictionary from SD card (optional) -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:label="SwipeType Sample"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+
+        <!-- Demo activity: lets the user set the keyboard and type into a text field -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="SwipeType Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Input Method Service — uses its own theme to avoid inheriting the system theme -->
+        <service
+            android:name=".SampleInputMethodService"
+            android:label="SwipeType Sample IME"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:theme="@style/SwipeTypeImeTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+
+    </application>
+
+</manifest>
